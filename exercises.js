@@ -37,3 +37,28 @@ exercise2Form.onsubmit = async (e) => {
     document.getElementById("exercise2Form").reset()
     //alert(exercise2.value)
 }
+
+
+// Exercise 3
+
+let para3 = document.getElementById("p3");
+
+function exercise3(){
+    let p3Toggle = document.getElementById("p3");
+    if (p3Toggle.style.display === "none"){
+        p3Toggle.style.display = "block";
+    }
+    else{
+        p3Toggle.style.display = "none"
+    }
+}
+
+for(let i = 2014; i < 2025; i++){
+    let date = new Date(i + ("-01-01"));
+    if(date.getDay() == 0){
+        para3.innerHTML += "<li>" + i + " Sunday" + "</li>"
+    }
+    else{
+        para3.innerHTML += "<li>" + i + " not a Sunday" + "</li>"
+    }
+}
