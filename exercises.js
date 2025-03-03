@@ -79,5 +79,24 @@ exercise4Form.onsubmit = async (e) => {
     }
     
     document.getElementById("exercise4Form").reset()
+}
+
+
+// Exercise 5
+
+exercise5Form.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let val1 = exercise5.value;
+    let val2 = document.querySelector('input[type=radio]:checked').value
     
+    //alert(val2)
+    if(val2 === "Celsius"){
+        p5.innerHTML = ((val1 - 32) * 5 / 9 + "C").bold();
+    }
+    else{
+        p5.innerHTML = ((val1 * 9/5) + 32 + "F").bold();
+    }
+    
+    document.getElementById("exercise5Form").reset()
 }
