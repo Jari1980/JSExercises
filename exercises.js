@@ -21,3 +21,19 @@ para13.innerHTML += dd + "-" + mm + "-" + yyyy;
 
 let para14 = document.getElementById("p14");
 para14.innerHTML += dd + "/" + mm + "/" + yyyy;
+
+
+// Exercise 2
+
+exercise2Form.onsubmit = async (e) => {
+    e.preventDefault();
+    if((exercise2.value % 4 == 0) && (exercise2.value % 100 != 0) || (exercise2.value % 400 == 0)){
+        p2.innerHTML = (exercise2.value + " is a leap year.").bold();
+    }
+    else{
+        p2.innerHTML = (exercise2.value + " is a Not leap year.").bold();
+    }
+    
+    document.getElementById("exercise2Form").reset()
+    //alert(exercise2.value)
+}
