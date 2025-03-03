@@ -25,7 +25,7 @@
     <div class="container">
         <div class="container">
             <h2>Exercise 1</h2>
-            <p>Write a JavaScript program to display the current day and time in the following format
+            <p><i>Write a JavaScript program to display the current day and time in the following format</i>
                 <br>
                 <b>1: mm-dd-yyyy, 2: mm/dd/yyyy or 3: dd-mm-yyyy, 4: dd/mm/yyyy</b>
             </p>
@@ -39,7 +39,7 @@
         <br>
         <div class="container">
             <h2>Exercise 2</h2>
-            <p>Write a JavaScript program to determine whether a given year is a leap year.</p>
+            <p><i>Write a JavaScript program to determine whether a given year is a leap year.</i></p>
             <form id="exercise2Form">
                 <div class="mb-3">
                   <label for="exercise2" class="form-label"><b>Enter a year to be checked</b></label>
@@ -53,12 +53,33 @@
         <br>
         <div class="container">
             <h2>Exercise 3</h2>
-            <p>Write a JavaScript program to find out if 1st January will be a Sunday between 
-                2014 and 2050.</p>
+            <p><i>Write a JavaScript program to find out if 1st January will be a Sunday between 
+                2014 and 2050.</i></p>
             <button class="btn btn-primary" onclick="exercise3()">Toggle Result</button>
             <br>
             <br>
             <p id="p3" style="display: none;"></p>
+        </div>
+        <br>
+        <div class="container">
+            <h2>Exercise 4</h2>
+            <p><i>Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).</i></p>
+            <form id="exercise4Form">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="exercise41" class="form-label"><b>Enter first number</b></label>
+                  <input type="number" class="form-control" id="exercise41" placeholder="First number">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exercise42" class="form-label"><b>Enter second number</b></label>
+                  <input type="number" class="form-control" id="exercise42" placeholder="second number">
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary" type="submit">Check Result</button>
+              </form>
+              <br>
+              <p id="p4">The result will be shown here.</p>
         </div>
     </div>
     <script src="exercises.js"></script>

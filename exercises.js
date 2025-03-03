@@ -62,3 +62,22 @@ for(let i = 2014; i < 2025; i++){
         para3.innerHTML += "<li>" + i + " not a Sunday" + "</li>"
     }
 }
+
+
+// Exercise 4
+
+exercise4Form.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let val1 = exercise41.value;
+    let val2 = exercise42.value;
+    if(val2 == 0){
+        p4.innerHTML = "Cant divide by 0".bold();
+    }
+    else{
+        p4.innerHTML = (val1 + " * " + val2 + " = " + val1*val2 + "<br>" + val1 + " / " + val2 + " = " + val1/val2).bold()
+    }
+    
+    document.getElementById("exercise4Form").reset()
+    
+}
