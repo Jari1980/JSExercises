@@ -274,3 +274,14 @@ function exercise13(){
 }
 
 
+// Exercise 14 //Not really happy with this solution but it does the trick
+
+let candy = {name: "Broccoli"};
+
+function exercise14(){
+    exercise144(candy)
+}
+
+function exercise144(candyObj){
+    p144.innerHTML = candyObj.name.valueOf();
+}
