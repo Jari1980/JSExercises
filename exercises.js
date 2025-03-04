@@ -100,3 +100,25 @@ exercise5Form.onsubmit = async (e) => {
     
     document.getElementById("exercise5Form").reset()
 }
+
+
+// Exercise 6
+
+exercise6Form.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let inputText = exercise61.value;
+    let index = exercise62.value;
+    let index2 = index.value + 1;
+
+    console.log(index)
+    const t1 = inputText.slice(0, index);
+    const mm = Number(1) + Number(index); 
+    console.log(index + mm)
+    const t2 = inputText.slice(mm);
+    const t3 = t1 + t2;
+
+    p6.innerHTML =  t3
+    
+    document.getElementById("exercise6Form").reset()
+}
