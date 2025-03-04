@@ -122,3 +122,17 @@ exercise6Form.onsubmit = async (e) => {
     
     document.getElementById("exercise6Form").reset()
 }
+
+
+// Exercise 7
+
+exercise7Form.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let inputText = exercise7.value;
+    let res = inputText.split('').reverse().join('');
+    console.log(res);
+
+    p7.innerHTML =  res
+    document.getElementById("exercise6Form").reset()
+}
