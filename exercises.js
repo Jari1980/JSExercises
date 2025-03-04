@@ -201,3 +201,30 @@ exercise10Form.onsubmit = async (e) => {
     p100.innerHTML = res; 
     document.getElementById("exercise10Form").reset()
 }
+
+
+// Exercise 11
+
+exercise11Form.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let inputText = exercise11.value;
+    let stringArr = inputText.split(' ');
+    let numArr = [];
+    
+    for(let i = 0; i < stringArr.length; i++){
+        let num = (parseInt(stringArr[i], 10));
+        if(num % 2 == 0){
+            console.log(num);
+            numArr.push(num);
+        }
+    }
+
+    let res = "";
+    for(let j = 0; j < numArr.length; j++){
+        res = "" + numArr[j].toString() + " " + res;
+    }
+    //console.log(res);
+    p111.innerHTML = res; 
+    document.getElementById("exercise11Form").reset()
+}
