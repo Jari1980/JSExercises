@@ -254,3 +254,23 @@ exercise12Form.onsubmit = async (e) => {
     p122.innerHTML = res; 
     document.getElementById("exercise12Form").reset()
 }
+
+
+// Exercise 13
+
+let para133 = document.getElementById("p133");
+let person = {name: "Snus", age: 20, adress: "Storstan"};
+
+para133.innerHTML = "Person name: " + person.name.valueOf() + ", age: " + person.age.valueOf() + ", adress: " + person.adress.valueOf();
+
+function exercise13(){
+    let p3Toggle = document.getElementById("p133");
+    if (p3Toggle.style.display === "none"){
+        p3Toggle.style.display = "block";
+    }
+    else{
+        p3Toggle.style.display = "none"
+    }
+}
+
+
