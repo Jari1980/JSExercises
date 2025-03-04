@@ -136,3 +136,21 @@ exercise7Form.onsubmit = async (e) => {
     p7.innerHTML =  res
     document.getElementById("exercise6Form").reset()
 }
+
+
+// Exercise 8
+
+exercise8Form.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let inputText = exercise8.value;
+    let stringArr = inputText.split(' ');
+    let sum = 0;
+    
+    for(let i = 0; i < stringArr.length; i++){
+        let num = (parseInt(stringArr[i], 10));
+        sum = sum + num;
+    }
+    p8.innerHTML =  sum
+    document.getElementById("exercise8Form").reset()
+}
