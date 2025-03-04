@@ -154,3 +154,23 @@ exercise8Form.onsubmit = async (e) => {
     p8.innerHTML =  sum
     document.getElementById("exercise8Form").reset()
 }
+
+
+// Exercise 9
+
+exercise9Form.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let inputText = exercise9.value;
+    let stringArr = inputText.split(' ');
+    let largest = Number.MIN_VALUE;
+    
+    for(let i = 0; i < stringArr.length; i++){
+        let num = (parseInt(stringArr[i], 10));
+        if(num > largest){
+            largest = num;
+        }
+    }
+    p9.innerHTML =  largest;
+    document.getElementById("exercise9Form").reset()
+}
