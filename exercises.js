@@ -228,3 +228,29 @@ exercise11Form.onsubmit = async (e) => {
     p111.innerHTML = res; 
     document.getElementById("exercise11Form").reset()
 }
+
+// Exercise 12
+
+exercise12Form.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let inputText = exercise12.value;
+    let stringArr = inputText.split(' ');
+    let numArr = [];
+    
+    for(let i = 0; i < stringArr.length; i++){
+        let num = (parseInt(stringArr[i], 10));
+        numArr.push(num);
+    }
+
+    let squaredNumbs = numArr.map((element) => element * element);
+    squaredNumbs.reverse();
+
+    let res = "";
+    for(let j = 0; j < squaredNumbs.length; j++){
+        res = "" + squaredNumbs[j].toString() + " " + res;
+    }
+    
+    p122.innerHTML = res; 
+    document.getElementById("exercise12Form").reset()
+}
