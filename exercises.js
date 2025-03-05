@@ -309,3 +309,21 @@ function exercise152(){
    
 }
 
+
+// Exercise 16
+
+let personP = {
+    name: "snusMannen",
+    age: 20,
+    adress: {
+        city: "StoraStaden",
+        country: "Sweden"
+    }
+}
+
+function exercise16(){
+    p16.innerHTML = "object properties: " + Object.getOwnPropertyNames(personP) + "<br>"
+                    + "name: " + personP.name.valueOf() + ", age: " + personP.age.valueOf() + ", adress: " + personP.adress.valueOf() + "<br>"
+                    + "adress: " + personP.adress.city.valueOf() + " " + personP.adress.country.valueOf();
+}
+
