@@ -285,3 +285,27 @@ function exercise14(){
 function exercise144(candyObj){
     p144.innerHTML = candyObj.name.valueOf();
 }
+
+
+// Exercise 15
+
+let Candy = {name: "Broccoli"};
+
+function exercise151(){
+    addProp(Candy);
+}
+
+function addProp(CandyObj, property){
+    Object.defineProperty(CandyObj, "isGood", {value: true, configurable: true})
+    p15.innerHTML = "Object properties: " + Object.getOwnPropertyNames(Candy);
+}
+
+
+function exercise152(){
+    Object.getOwnPropertyDescriptor(Candy, "isGood");
+    delete Candy.isGood;
+    delete Candy["isGood"];
+    p15.innerHTML = "Object properties: " + Object.getOwnPropertyNames(Candy);
+   
+}
+
