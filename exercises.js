@@ -391,3 +391,19 @@ function exercise20(){
     let bg = document.getElementById("p20")
     bg.style.backgroundColor = "LightBlue";
 }
+
+
+// Exercise 21
+
+function exercise21(){
+    const tData = document.createElement("td");
+    const tDataText = "Row? cell?"
+    tData.textContent = tDataText;
+    let table = document.getElementById("sampleTable");
+
+    let row = table.insertRow(2)
+    let cell1 = row.insertCell(0)
+    let cell2 = row.insertCell(1)
+    cell1.textContent = tDataText;
+    cell2.textContent = tDataText;
+}
