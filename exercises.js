@@ -365,7 +365,6 @@ function exercise182(){
 
 // Exercise 19
 
-
 form1.onsubmit = async (e) => {
     e.preventDefault();
 
@@ -385,3 +384,10 @@ form1.onsubmit = async (e) => {
     document.getElementById("form1").reset()
 }
 
+
+// Exercise 20
+
+function exercise20(){
+    let bg = document.getElementById("p20")
+    bg.style.backgroundColor = "LightBlue";
+}
