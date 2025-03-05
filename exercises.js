@@ -327,3 +327,22 @@ function exercise16(){
                     + "adress: " + personP.adress.city.valueOf() + " " + personP.adress.country.valueOf();
 }
 
+
+// Exercise 17
+
+let comps = {PC: 90, Amiga500: 100, C64: 80, AtariST: 70, Maccintosch: 5};
+
+Object.filter = (obj, predicate) => 
+    Object.keys(obj)
+          .filter( key => predicate(obj[key]) )
+          .reduce( (res, key) => Object.assign(res, { [key]: obj[key] }), {} );
+
+function exercise171(){
+    p17.innerHTML = Object.getOwnPropertyNames(comps);
+}
+
+function exercise172(){
+    let compsFiltered = Object.filter(comps, comp => comp > 75);
+    p17.innerHTML = Object.getOwnPropertyNames(compsFiltered);
+}
+
