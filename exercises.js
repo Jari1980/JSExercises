@@ -361,3 +361,27 @@ function exercise182(){
     let objMerged = Object.assign(personA, treat);
     p18.innerHTML = "Properties of merged objects objMerged: " + Object.getOwnPropertyNames(objMerged);
 }
+
+
+// Exercise 19
+
+
+form1.onsubmit = async (e) => {
+    e.preventDefault();
+
+    const form = document.getElementById('form1');
+    const allInputs = form.querySelectorAll('input');
+    let formObj = {};
+    allInputs.forEach(e => {
+        const key = e.getAttribute('name');
+        if(key){
+            formObj[key] = e.value;
+          }    
+        });
+        
+    //console.log(formObj);
+    p19.innerHTML = "First name: " + formObj.fname.valueOf() + ", last name: " + formObj.lname.valueOf();
+
+    document.getElementById("form1").reset()
+}
+
