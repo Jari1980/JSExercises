@@ -346,3 +346,18 @@ function exercise172(){
     p17.innerHTML = Object.getOwnPropertyNames(compsFiltered);
 }
 
+
+// Exercise 18
+
+let personA = {name: "Snus", Age: 20};
+let treat = {name: "Ostbågar", Gott: true};
+
+function exercise181(){
+    p18.innerHTML = "Properties of personA: " + Object.getOwnPropertyNames(personA) + ", properties of treat: "
+    + Object.getOwnPropertyNames(treat);
+}
+
+function exercise182(){
+    let objMerged = Object.assign(personA, treat);
+    p18.innerHTML = "Properties of merged objects objMerged: " + Object.getOwnPropertyNames(objMerged);
+}
